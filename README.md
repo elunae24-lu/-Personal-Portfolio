@@ -7,3 +7,6 @@ Welcome to my personal portfolio! Here you'll find examples of my front-end work
 - Project showcase with GitHub links
 - About Me section highlighting skills and experience
 - Contact section for getting in touch
+
+
+#STILL WORK ON IT!!!

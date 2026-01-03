@@ -9,4 +9,4 @@ Welcome to my personal portfolio! Here you'll find examples of my front-end work
 - Contact section for getting in touch
 
 
-#STILL WORK ON IT!!!
+STILL WORK ON IT!!!

@@ -32,10 +32,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5%; /* responsive padding */
+    padding: 0 5%;
     height: 80px;
     background-color: var(--background-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* subtle shadow for depth */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -54,15 +54,25 @@ nav .left a:hover {
 }
 
 /* RIGHT SIDE - NAV LINKS */
+nav .right {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* better spacing than margin-left */
+}
+
 nav .right a {
     color: var(--text-color);
-    margin-left: 20px;
     font-weight: 500;
     transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 6px;
 }
 
 nav .right a:hover {
     color: var(--hover-color-1);
+    background-color: rgba(37, 99, 235, 0.1); /* subtle hover background */
 }
 
 /* GMAIL BUTTON */
@@ -70,17 +80,32 @@ nav .right a:hover {
     color: var(--background-color);
     background-color: var(--text-color);
     padding: 6px 16px;
-    border-radius: 5px;
-    margin-left: 20px;
+    border-radius: 20px; /* pill shape */
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin: 10px;
 }
 
 .gmail:hover {
     background-color: var(--hover-color-1);
     color: var(--background-color);
-    transform: translateY(-2px); /* subtle lift effect */
+    transform: translateY(-2px);
 }
+
+    .github {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 6px 16px;
+    border-radius: 20px; /* pill shape */
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    margin: 10px;
+}
+
+.github:hover {
+    background-color: var(--hover-color-1);
+    color: var(--background-color);
+    transform: translateY(-2px);
 
 /* RESPONSIVE NAVIGATION */
 @media (max-width: 768px) {
@@ -92,14 +117,18 @@ nav .right a:hover {
 
     nav .right {
         width: 100%;
-        display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+        gap: 8px;
     }
 
-    nav .right a,
-    .gmail {
-        margin: 8px 0;
+    /* Hide text spans on small screens */
+    nav .right a span {
+        display: none;
     }
+}
+
+nav .right a i {
+    font-size: 1.5rem;
 }

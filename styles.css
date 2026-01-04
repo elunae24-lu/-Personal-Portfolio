@@ -1,41 +1,105 @@
-
-/* Body styling */
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    line-height: 1.6;
-    color: #333;
-    margin: 0;           /* ensures no default margin */
-    padding: 0;          /* ensures no default padding */
-    background-color: #f9f9f9; /* optional light background */
+:root {
+    --background-color: #f9fafb;
+    --text-color: #111827;
+    --link-color: #1d4ed8;
+    --hover-color-1: #2563eb;
 }
 
-/* Navigation link container */
-#nav-link {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+/* NAVBAR */
+nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;  /* centers items vertically */
-    width: 100%;
-    padding: 10px 20px;  /* gives some spacing inside nav */
-    box-sizing: border-box; /* ensures padding doesn't break width */
+    align-items: center;
+    padding: 0 5%; /* responsive padding */
+    height: 80px;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* subtle shadow for depth */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* Links styling */
-a {
-    text-decoration: none;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 5px 10px;  /* slightly more horizontal padding for better click area */
-    margin: 10px;
-    box-shadow: 0px 8px 8px rgba(0,0,0,0.1); /* replaced bisque with subtle shadow */
-    color: #333;
-    transition: all 0.3s ease; /* smooth hover effect */
+/* LEFT SIDE - LOGO / BRAND */
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-/* Hover effect for links */
-a:hover {
-    background-color: #333;
-    color: white;
-    box-shadow: 0px 12px 12px rgba(0,0,0,0.2);
-    transform: translateY(-2px); /* small lift effect */
+nav .left a:hover {
+    color: var(--hover-color-1);
+}
+
+/* RIGHT SIDE - NAV LINKS */
+nav .right a {
+    color: var(--text-color);
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .right a:hover {
+    color: var(--hover-color-1);
+}
+
+/* GMAIL BUTTON */
+.gmail {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 6px 16px;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.gmail:hover {
+    background-color: var(--hover-color-1);
+    color: var(--background-color);
+    transform: translateY(-2px); /* subtle lift effect */
+}
+
+/* RESPONSIVE NAVIGATION */
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    nav .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    nav .right a,
+    .gmail {
+        margin: 8px 0;
+    }
 }

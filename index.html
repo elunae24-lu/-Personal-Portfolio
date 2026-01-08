@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Edgar Luna | Portfolio</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -16,162 +16,127 @@
 </head>
 <body>
 
- <nav>
-  <div class="left">
-    <a href="/">Edgar Luna</a>
-  </div>
+  <!-- NAV -->
+  <nav>
+    <div class="left">
+      <a href="#hero">Edgar Luna</a>
+    </div>
 
-  <div class="right">
-    <a href="https://github.com/elunae24-lu" target="_blank" rel="noopener noreferrer">
-      <i class="fa-brands fa-square-github"></i>
-      <span class="github">Github</span>
-    </a>
-
-    <a href="mailto:elunae24@gmail.com" aria-label="Send email to Edgar Luna">
-      <i class="fa-solid fa-envelope"></i>
-      <span class="gmail">Email</span>
-    </a>
-  </div>
-</nav>
-
- <main>
-  <section id="hero">
-  <div class="hero-text">
-    <h2>Hi I'm Edgar</h2>
-    <p>
-      Self-motivated <span class="sp">front-end developer</span>
-        focused on building clean, responsive websites using HTML,
-        CSS, and JavaScript.
-        Currently developing personal projects and a portfolio to strengthen real-world skills.
-        Passionate about learning modern web development, improving UI design,
-        and growing toward building full web applications.
-    </p>
-
-    <div class="links">
-      <a href="#skills">
-        <i class="fa-solid fa-code"></i>
-        <span>Skills</span>
+    <div class="right">
+      <a href="https://github.com/elunae24-lu" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-square-github"></i>
+        <span>Github</span>
       </a>
 
-      <a href="#projects">
-        <i class="fa-solid fa-diagram-project"></i>
-        <span>Projects</span>
-      </a>
-
-      <a href="#contact">
-        <i class="fa-regular fa-address-book"></i>
-        <span>Contact</span>
+      <a href="mailto:elunae24@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
       </a>
     </div>
-  </div>
+  </nav>
 
-  <div class="headshot">
-    <img src="images/IMG_2979.jpeg" alt="Edgar Luna headshot">
-  </div>
-</section>
+  <main>
 
-    
-<!-- SECTION-2-SKILLS -->
-<section id="skills" class="skills section">
-  <div class="text">
-    <h2>Skills</h2>
-    <p>
-      Solid foundation in HTML and CSS with hands-on experience building responsive
-      layouts using Flexbox. Comfortable structuring web pages, styling images and
-      sections, and troubleshooting layout issues. Currently learning JavaScript to
-      build interactive web applications and improve overall front-end development skills.
-    </p>
-  </div>
+    <!-- HERO -->
+    <section id="hero">
+      <div class="hero-text">
+        <h2>Hi, I'm Edgar</h2>
+        <p>
+          Self-motivated <span class="sp">front-end developer</span> focused on building clean,
+          responsive websites using HTML, CSS, and JavaScript.
+          Currently developing personal projects and a portfolio to strengthen real-world skills.
+          Passionate about learning modern web development, improving UI design,
+          and growing toward building full web applications.
+        </p>
 
-  <!-- skills cells -->
-  <div class="cells">
-    <div class="cell">
-      <img src="images/html.png" alt="HTML logo">
-      <span>HTML</span>
-    </div>
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
 
-    <div class="cell">
-      <img src="images/css-3.svg" alt="CSS logo">
-      <span>CSS</span>
-    </div>
+          <a href="#projects">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span>Projects</span>
+          </a>
 
-    <div class="cell">
-      <img src="images/java.png" alt="JavaScript logo">
-      <span>JavaScript</span>
-    </div>
-  </div>
-</section>
-
-
-
-
-
+          <a href="#contact">
+            <i class="fa-regular fa-address-book"></i>
+            <span>Contact</span>
+          </a>
         </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/IMG_2979.jpeg" alt="Edgar Luna headshot">
+      </div>
     </section>
 
-    <!-- SECTION-3-PROJECTS -->
-    <section id="Projects">
-      <!-- skills content -->
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+      <div class="text">
+        <h2>Skills</h2>
+        <p>
+          Solid foundation in HTML and CSS with hands-on experience building responsive
+          layouts using Flexbox. Currently learning JavaScript to build interactive
+          web applications and improve front-end development skills.
+        </p>
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html.png" alt="HTML logo">
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css-3.svg" alt="CSS logo">
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/java.png" alt="JavaScript logo">
+          <span>JavaScript</span>
+        </div>
+      </div>
     </section>
 
-    <!-- SECTION-3-CONTACT -->
-    <section id="contact">
-      <!-- Contact content -->
-    </section>
+   <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-wrapper">
+    <div class="project">
+      <img src="images/landing page.jpg" alt="Product Landing Page preview">
+      <h3>Product Landing Page</h3>
+      <p>Responsive landing page built with HTML & CSS.</p>
+    </div>
+
+    <div class="project">
+      <img src="images/card.jpg" alt="Playing Cards page preview">
+      <h3>Playing Cards Page</h3>
+      <p>Layout practice project using Flexbox.</p>
+    </div>
   </div>
+</section>
+
+      
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <form class="contact">
+        <h2>Contact</h2>
+        <label class="form">
+          <input type="text" id="form" placeholder="Name">
+        </label>
+        <br>
+        
+        <label class="Email">
+          <input type="email" id="email" placeholder="Email">
+        </label>
+      </section>
+  </form>
+
   </main>
-
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
